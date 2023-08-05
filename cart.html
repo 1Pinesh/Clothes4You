@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothes4You</title>
+    <link rel="short-cut icon" href="/img/Products/Tab1.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icon Libary -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <h1><img src="img/Logo/Logo.png" alt="Logo" /></h1>
+      <div class="search">
+        <form class="search-bar">
+          <input type="text" placeholder="Search" />
+          <button type="submit" aria-label="search Icon">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </button>
+        </form>
+      </div>
+      <div>
+        <nav id="navbar">
+          <a href="#" aria-label="close"
+            ><i id="close" class="fa-solid fa-xmark"></i
+          ></a>
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html" aria-label="basket Icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div id="cart-num" class="cart-num">0</div>
+          </a>
+        </nav>
+      </div>
+      <div>
+        <i id="menuBar" class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <main>
+      <section id="contact-ban-con">
+        <div class="ban-detail">
+          <h2>Discount Code :</h2>
+          <h3>12AB34CD</h3>
+        </div>
+      </section>
+      <section id="cart-con">
+        <div class="cart-table">
+          <div class="row">
+            <div class="image">
+              <img
+                src="img/Products/Skull-Orange-Hoodie.jpg"
+                alt="Skull-Orange-Hoodie"
+              />
+            </div>
+            <div class="productDetail">
+              <h4>Product details</h4>
+              <p>Skull-Orange-Hoodie</p>
+            </div>
+            <div class="price">
+              <h4>Price</h4>
+              <p id="price1">£12</p>
+            </div>
+            <div class="quantity">
+              <h4>Quantity</h4>
+              <div class="quan-box">
+                <span class="plus1"> <i class="fa-solid fa-plus"></i> </span>
+                <span class="numOfItem1"> 1 </span>
+                <span class="minus1"> <i class="fa-solid fa-minus"></i> </span>
+              </div>
+            </div>
+            <div class="total">
+              <h4>Total</h4>
+              <p id="total1">£12</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="image">
+              <img
+                src="img/Products/red_jacket.jpg"
+                alt="Woman Red Red Jacket"
+              />
+            </div>
+            <div class="productDetail">
+              <h4>Product details</h4>
+              <p>Woman Red Red Jacket</p>
+            </div>
+            <div class="price">
+              <h4>Price</h4>
+              <p id="price2">£55</p>
+            </div>
+            <div class="quantity">
+              <h4>Quantity</h4>
+              <div class="quan-box">
+                <span class="plus2"> <i class="fa-solid fa-plus"></i> </span>
+                <span class="numOfItem2"> 1 </span>
+                <span class="minus2"> <i class="fa-solid fa-minus"></i> </span>
+              </div>
+            </div>
+            <div class="total">
+              <h4>Total</h4>
+              <p id="total2">£55</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="image">
+              <img
+                src="img/Products/Green-Long-Sleeves.png"
+                alt="Green-Long-Sleeves"
+              />
+            </div>
+            <div class="productDetail">
+              <h4>Product details</h4>
+              <p>Green Long Sleeves</p>
+            </div>
+            <div class="price">
+              <h4>Price</h4>
+              <p id="price3">£12</p>
+            </div>
+            <div class="quantity">
+              <h4>Quantity</h4>
+              <div class="quan-box">
+                <span class="plus3"> <i class="fa-solid fa-plus"></i> </span>
+                <span class="numOfItem3"> 1 </span>
+                <span class="minus3"> <i class="fa-solid fa-minus"></i> </span>
+              </div>
+            </div>
+            <div class="total">
+              <h4>Total</h4>
+              <p id="total3">£12</p>
+            </div>
+          </div>
+        </div>
+        <div class="summary-con">
+          <div class="list-con">
+            <h4>Order Summary</h4>
+            <div class="item-list">
+              <div id="total_Num_Item">
+                <span id="total-item-num"></span>
+                <p>items</p>
+              </div>
+              <div id="item-price">
+                <p>£</p>
+                <span id="total-list">12</span>
+              </div>
+            </div>
+            <div class="Total-price">
+              <h3>Total</h3>
+              <div class="item-price">
+                <p>£</p>
+                <span id="list-total">12</span>
+              </div>
+            </div>
+            <div class="payment-detail">
+              <h2>Payment Detail</h2>
+              <input
+                type="text"
+                name="cardName"
+                id="cardName"
+                placeholder="Card Holder"
+              />
+              <input
+                type="number"
+                name="cardNum"
+                id="cardNum"
+                placeholder="Credit/Debit Card Number"
+              />
+              <input
+                type="text"
+                name="cardExpiry"
+                id="cardExpiry"
+                placeholder="Expiration Month and Year"
+              />
+              <input type="number" name="cvc" id="cvc" placeholder="CVC" />
+              <span id="error-msg"></span>
+            </div>
+            <div id="pay-now">
+              <button id="payNowbtn">Pay Now</button>
+            </div>
+            <div id="promo-con">
+              <div class="promo-title">
+                <span>Do you Have any Discount Code?</span>
+                <div id="promo-bar">
+                  <div>
+                    <input
+                      id="discount-code"
+                      type="text"
+                      name="discount-code"
+                      placeholder="Discount Code"
+                    />
+                    <p id="discount-msg"></p>
+                  </div>
+                  <button id="Apply-btn">APPLY</button>
+                </div>
+              </div>
+            </div>
+            <div class="payment-ban"></div>
+          </div>
+        </div>
+      </section>
+      <div id="toast-box"></div>
+    </main>
+    <footer>
+      <section id="footer">
+        <div class="col">
+          <img src="img/Logo/Logo.png" alt="Clothes4You logo" />
+          <h2>Contact</h2>
+          <p><strong>Email</strong>: clothes4you@gmail.com</p>
+          <p><strong>Number</strong>: +44 7457 971453</p>
+          <p><strong>Serivce Avaliable</strong>: 09:00 - 18:00 GMT</p>
+        </div>
+        <div class="col">
+          <h2>Follow Our Social Media</h2>
+          <div class="Social">
+            <a href="https://en-gb.facebook.com/" aria-label="facebook logo"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.snapchat.com/" aria-label="snapchat logo"
+              ><i class="fa-brands fa-snapchat"></i
+            ></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/" aria-label="youtube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section id="copyright">
+        <div class="footer-bot">
+          <h2>@2023 , Clothes4You</h2>
+        </div>
+      </section>
+    </footer>
+    <script src="js/menuBar.js"></script>
+    <script src="js/cartCal.js"></script>
+    <script src="js/discount.js"></script>
+    <script src="js/cartPage.js"></script>
+  </body>
+</html>
